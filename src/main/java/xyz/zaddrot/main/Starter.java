@@ -5,7 +5,10 @@ package xyz.zaddrot.main;
  */
 public class Starter {
     public static void main(String[] args){
-
-
+        int x,y,a;
+        x = 100;
+        y = 200;
+        a = x + y ;
+        System.out.print(a);
     }
 }
