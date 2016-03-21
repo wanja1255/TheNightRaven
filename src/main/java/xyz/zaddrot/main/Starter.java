@@ -1,14 +1,20 @@
 package xyz.zaddrot.main;
 
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+
+import java.io.IOException;
+
 /**
  * Created by night on 08.03.2016.
  */
 public class Starter {
     public static void main(String[] args){
-        int x,y,a;
-        x = 100;
-        y = 200;
-        a = x + y ;
-        System.out.print(a);
+        try {
+            Connection.Response SMS = Jsoup.connect("http://sms.ru/sms/send?api_id=8CF99BD9-9565-171F-0D5B-8F1D88CF3428&to=79807057233&text=hello+world").method(Connection.Method.GET).execute();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
