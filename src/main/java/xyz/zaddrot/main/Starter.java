@@ -14,6 +14,7 @@ public class Starter {
             Connection.Response SMS = Jsoup.connect("http://sms.ru/sms/send?api_id=8CF99BD9-9565-171F-0D5B-8F1D88CF3428&to=79807057233&text=hello+world").method(Connection.Method.GET).execute();
             System.out.println(SMS.body());
 
+            /* ВАНЯ  */
         } catch (IOException e) {
             e.printStackTrace();
         }
